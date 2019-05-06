@@ -1,0 +1,30 @@
+ĐỌC PHẦN NÀY TRƯỚC KHI HỎI NHA :
+
+A.Nguyên Tắc code :
+- Tên class viết hoa chữ đầu tiếp theo là kiểu lạc đà : Ví dụ : Student , StudentActivity, StudentAdapter 
+- Tên đối tượng viết thường chữ đầu tiên sau đó viết tiếp theo kiểu lạc đà : Ví dụ : student, studentAdapter, studentActivity.
+- Một đối tượng sẵn sàng làm việc khi được khai báo và khởi tạo.
+    Ví dụ khai báo : Student student;
+ Khởi Tạo : student = new Student;
+ Hoặc được ánh xạ : btnSave = findViewById(R.id.btn_save);   
+
+- Tên file xml viết thường cách nhau bằng dấu gạch dưới (_). Ví dụ : student_layout , student_item_layout.
+- Cách đặt id các View và ViewGroup trong xml : (viết tắt kiểu + tên view viết thường cách nhau bằng dấu gạch dưới "_" )
+  + TextView : tv_
+  + Button : btn_
+  + EditText : edt_
+  + View : v_
+  + ListView : lv_
+  + RecyclerView : rv_  
+  + ImageView : img_
+  + .......
+  Ví dụ : img_avatar, edt_username, rv_student, tv_title
+
+B.Các lỗi thường gặp :
+
+1. Null reference
+- Kiểm tra xem đã khai báo và khởi tạo đầy đủ chưa.
+- Nếu lấy từ file xml thì kiểm tra xem đã findViewById chưa.
+
+2.Đỏ tất cả những chỗ có .R
+- Kiểm tra lại xem các file xml đã đúng chưa.
