@@ -86,17 +86,32 @@
 
     </LinearLayout>
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/red_round_login"
-        android:fontFamily="@font/roboto_black"
-        android:gravity="center"
-        android:text="XÁC NHẬN"
-        android:textColor="#ffff"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/red_round_login">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="Xác Nhận"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/ic_muiten_bt" />
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
