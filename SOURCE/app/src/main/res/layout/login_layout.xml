@@ -73,35 +73,29 @@
                 android:padding="20dp" />
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/red_round_login"
                 android:layout_marginTop="20dp"
                 android:layout_marginHorizontal="25dp">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="@drawable/red_round_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto_black"
                     android:gravity="center"
                     android:text="ĐĂNG NHẬP"
                     android:textColor="#ffff"
+                    android:layout_centerInParent="true"
                     android:textSize="20sp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
                         android:src="@mipmap/ic_vantay" />
-
-
-
-                </LinearLayout>
-
-
 
             </RelativeLayout>
 
