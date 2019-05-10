@@ -51,50 +51,34 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@mipmap/img_maxacnhan_an"/>
-
-        <view
-            android:layout_width="10dp"
-            android:layout_height="30dp"
-            android:background="#E40808"/>
+            android:src="@mipmap/img_maxacnhan_an"
+            android:layout_marginRight="10dp"/>
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@mipmap/img_maxacnhan_an"/>
-
-        <view
-            android:layout_width="10dp"
-            android:layout_height="30dp"/>
+            android:src="@mipmap/img_maxacnhan_an"
+            android:layout_marginRight="10dp"/>
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@mipmap/img_maxacnhan_an"/>
-
-        <view
-            android:layout_width="10dp"
-            android:layout_height="30dp"/>
+            android:src="@mipmap/img_maxacnhan_an"
+            android:layout_marginRight="10dp"/>
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@mipmap/img_maxacnhan_an"/>
+            android:src="@mipmap/img_maxacnhan_an"
+            android:layout_marginRight="10dp"/>
 
-        <view
-            android:layout_width="10dp"
-            android:layout_height="30dp"/>
-
-        <ImageView
+      <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@mipmap/img_maxacnhan_an"/>
+            android:src="@mipmap/img_maxacnhan_an"
+          android:layout_marginRight="10dp"/>
 
-        <view
-            android:layout_width="10dp"
-            android:layout_height="30dp"/>
-
-        <ImageView
+       <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@mipmap/img_maxacnhan_an"/>
