@@ -298,7 +298,7 @@
             android:layout_centerInParent="true"
             android:fontFamily="@font/roboto_black"
             android:gravity="center"
-            android:text="ĐĂNG NHẬP"
+            android:text="Đồng ý"
             android:textColor="#ffff"
             android:textSize="20sp" />
 
