@@ -7,7 +7,10 @@
 
     <ImageView
         android:layout_width="30dp"
-        android:layout_height="30dp" />
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,6 +18,115 @@
         android:text="Nhập mã xác thực"
         android:textColor="#000"
         android:textSize="25sp"
-        android:fontFamily="@font/roboto_bold"/>
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã xác thực được gửi về số điện thoại"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+84975795580"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/img_maxacnhan_an"/>
+
+        <view
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:background="#E40808"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/img_maxacnhan_an"/>
+
+        <view
+            android:layout_width="10dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/img_maxacnhan_an"/>
+
+        <view
+            android:layout_width="10dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/img_maxacnhan_an"/>
+
+        <view
+            android:layout_width="10dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/img_maxacnhan_an"/>
+
+        <view
+            android:layout_width="10dp"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/img_maxacnhan_an"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/red_round_login"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="XÁC NHẬN"
+        android:textColor="#ffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Tôi không nhậm dược mã?"
+        android:textColor="#6B000000"
+        android:textSize="12sp" />
+
+
+
+
 
 </LinearLayout>
