@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#750F0F">
 
-</LinearLayout>
+    <View
+        android:id="@+id/v_blu"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#0B56E7"/>
+
+    <View
+        android:id="@+id/v_gree"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#1AE70B"
+        android:layout_below="@+id/v_blu"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
