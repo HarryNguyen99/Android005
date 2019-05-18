@@ -13,8 +13,13 @@
             android:name="com.google.android.actions"
             android:resource="@xml/activity_mian" />
 
-        <activity android:name=".TaikhoanActivity">
+        <activity android:name=".LichSuGDActivity">
+        </activity>
 
+        <activity android:name=".ThongTinCoBanActivity">
+        </activity>
+
+        <activity android:name=".TaikhoanActivity">
         </activity>
 
 
@@ -24,6 +29,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>

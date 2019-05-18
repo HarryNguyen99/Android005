@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (checkValid()) {
 //                   Chuyển màn hình
 //                    Tạo đối tượng intent
-                    Intent intent = new Intent(LoginActivity.this, TaikhoanActivity.class);
-                    startActivity(intent);
+                    Intent tk = new Intent(LoginActivity.this, TaikhoanActivity.class);
+                    startActivity(tk);
                 } else {
 //                    Hiển thị thông báo lỗi
                     Toast.makeText(LoginActivity.this,
