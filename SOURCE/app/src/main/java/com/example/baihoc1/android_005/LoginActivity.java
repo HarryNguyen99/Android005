@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (checkValid()) {
 //                   Chuyển màn hình
 //                    Tạo đối tượng intent
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, TaikhoanActivity.class);
                     startActivity(intent);
                 } else {
 //                    Hiển thị thông báo lỗi
@@ -54,11 +54,12 @@ public class LoginActivity extends AppCompatActivity {
 
     boolean checkValid() {
         int phoneLeng = edtPhoneNumber.getText().toString().length();
-        return (phoneLeng > 9);
+       return (phoneLeng == 10);
 
-//        if (phoneLeng > 9)
+ //       if (phoneLeng == 10)
 //            return true;
-//        return false;
+//       return false;
     }
+
 
 }

@@ -13,6 +13,11 @@
             android:name="com.google.android.actions"
             android:resource="@xml/activity_mian" />
 
+        <activity android:name=".TaikhoanActivity">
+
+        </activity>
+
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
