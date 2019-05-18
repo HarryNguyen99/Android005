@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(R.layout.activity_main);
 
 //        Tạo đối tượng User
@@ -69,5 +70,8 @@ public class MainActivity extends AppCompatActivity {
         tvPhuong.setText("Gia Đông");
 
 
+=======
+        setContentView(R.layout.taikhoan_layout);
+>>>>>>> 8252cfee3ac9a2a26188a1ddeb9ea6d289ef70da
     }
 }
