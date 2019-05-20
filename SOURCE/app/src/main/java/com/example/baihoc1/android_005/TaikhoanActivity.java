@@ -14,13 +14,14 @@ import com.squareup.picasso.Picasso;
 
 import java.security.AccessController;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class TaikhoanActivity extends AppCompatActivity {
 
-    TextView tvUS;
-    TextView tvSTT;
+    TextView tvUS, tvSTT, tvUserPhonenumber;
     LinearLayout llLichSuGD;
     LinearLayout llDangXuat;
-    ImageView imgAvatar;
+    CircleImageView imgAvatar;
 
 
     @Override
@@ -28,56 +29,67 @@ public class TaikhoanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.taikhoan_layout);
 
+        init();
+        getData();
+    }
 
-        imgAvatar = findViewById(R.id.img_avatar);
-        Glide.with(TaikhoanActivity.this).load("https://www.upsieutoc.com/images/2019/05/20/img_avatar.png")
+    void init(){
+
+            imgAvatar = findViewById(R.id.img_avatar);
+
+//            Glide.with(TaikhoanActivity.this).load("https://www.upsieutoc.com/images/2019/05/20/img_avatar.png")
+//                    .into(imgAvatar);
+
+            tvUS = findViewById(R.id.tv_username);
+
+            tvUserPhonenumber = findViewById(R.id.tv_user_phonenumber);
+
+            tvSTT = findViewById(R.id.tv_sua_thongtin);
+
+            tvSTT.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent stt = new Intent(TaikhoanActivity.this, ThongTinCoBanActivity.class);
+                    startActivity(stt);
+                }
+            });
+
+            llLichSuGD = findViewById(R.id.ll_lich_su_gd);
+            llLichSuGD.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent lichsgd = new Intent(TaikhoanActivity.this, LichSuGDActivity.class);
+                    startActivity(lichsgd);
+                }
+            });
+
+            llDangXuat = findViewById(R.id.ll_dang_xuat);
+            llDangXuat.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent lichsgd = new Intent(TaikhoanActivity.this, LoginActivity.class);
+                    startActivity(lichsgd);
+                }
+            });
+        }
+
+    void getData (){
+
+        User user = (User) getIntent().getSerializableExtra("user");
+        tvUserPhonenumber.setText(user.getPhoneNumber());
+        tvUS.setText(user.getUsername());
+        Glide.with(TaikhoanActivity.this).load(user.getProfileUrl())
                 .into(imgAvatar);
 
-        tvUS = findViewById(R.id.tv_username);
-        tvUS.setText("Nguyễn Phú Quý");
 
-        tvSTT = findViewById(R.id.tv_sua_thongtin);
-
-        tvSTT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent stt = new Intent(TaikhoanActivity.this, ThongTinCoBanActivity.class);
-                startActivity(stt);
-
-            }
-        });
-
-        llLichSuGD = findViewById(R.id.ll_lich_su_gd);
-
-        llLichSuGD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent lichsgd = new Intent(TaikhoanActivity.this, LichSuGDActivity.class);
-                startActivity(lichsgd);
-
-
-            }
-        });
-
-        llDangXuat = findViewById(R.id.ll_dang_xuat);
-
-        llDangXuat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent lichsgd = new Intent(TaikhoanActivity.this, LoginActivity.class);
-                startActivity(lichsgd);
-
-
-            }
-        });
-
-
-
+//        String phonenumber = getIntent().getStringExtra("phone_number");
+//        tvUserPhonenumber.setText(phonenumber);
 
     }
+
+
+
 
 
 }

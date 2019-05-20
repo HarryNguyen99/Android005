@@ -38,7 +38,13 @@ public class LoginActivity extends AppCompatActivity {
 //                   Chuyển màn hình
 //                    Tạo đối tượng intent
                     Intent tk = new Intent(LoginActivity.this, TaikhoanActivity.class);
+                    User user;
+                    user = new User();
+                    user.setUsername("Harry Nguyen");
+                    user.setPhoneNumber("+84961080123");
+                    user.setProfileUrl("https://images.hellogiggles.com/uploads/2018/04/11101451/national-pet-day-puns.jpg");
                     startActivity(tk);
+                    fileList();
                 } else {
 //                    Hiển thị thông báo lỗi
                     Toast.makeText(LoginActivity.this,
