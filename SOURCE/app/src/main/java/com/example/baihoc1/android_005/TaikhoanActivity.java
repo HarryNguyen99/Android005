@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.security.AccessController;
@@ -27,9 +28,10 @@ public class TaikhoanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.taikhoan_layout);
 
+
         imgAvatar = findViewById(R.id.img_avatar);
-        Picasso.with(TaikhoanActivity.this).load("https://www.upsieutoc.com/images/2019/05/18/ic_facebook_login.md.png").
-                into(imgAvatar);
+        Glide.with(TaikhoanActivity.this).load("https://www.upsieutoc.com/images/2019/05/20/img_avatar.png")
+                .into(imgAvatar);
 
         tvUS = findViewById(R.id.tv_username);
         tvUS.setText("Nguyễn Phú Quý");
