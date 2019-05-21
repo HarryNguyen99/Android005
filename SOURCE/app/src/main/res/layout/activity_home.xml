@@ -1,20 +1,41 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fffccc"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:id="@+id/tv_xin_chao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xin chào, "
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="15sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
     <ScrollView android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
         xmlns:android="http://schemas.android.com/apk/res/android">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="1000dp"
-            android:background="#fff000"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="#fff000">
+                android:background="@drawable/gray_round_login"
+                android:layout_marginHorizontal="20dp">
             </LinearLayout>
 
             <LinearLayout
@@ -25,13 +46,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:background="#FF0048">
-            </LinearLayout>
+                android:layout_height="500dp"
+                android:background="#FF0048"></LinearLayout>
 
 
 
         </LinearLayout>
 
     </ScrollView>
-</RelativeLayout>
+</LinearLayout>
