@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/ll_noi_dung"
@@ -311,10 +312,38 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent">
 
-                                <ImageView
-                                    android:layout_width="325dp"
-                                    android:layout_height="184dp"
-                                    android:src="@mipmap/img_ong_nhua" />
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="325dp"
+                                        android:layout_height="184dp"
+                                        android:src="@mipmap/img_ong_nhua" />
+
+                                </android.support.v7.widget.CardView>
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="325dp"
+                                        android:layout_height="184dp"
+                                        android:src="@mipmap/img_van" />
+
+                                </android.support.v7.widget.CardView>
 
 
                             </RelativeLayout>
@@ -324,22 +353,18 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="10dp">
 
-                                <ImageView
-                                    android:layout_width="325dp"
-                                    android:layout_height="184dp"
-                                    android:src="@mipmap/img_van" />
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="20dp">
 
-                            </RelativeLayout>
+                                    <ImageView
+                                        android:layout_width="325dp"
+                                        android:layout_height="184dp"
+                                        android:src="@mipmap/img_t_noi" />
 
-                            <RelativeLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_marginLeft="10dp">
+                                </android.support.v7.widget.CardView>
 
-                                <ImageView
-                                    android:layout_width="325dp"
-                                    android:layout_height="184dp"
-                                    android:src="@mipmap/img_t_noi" />
 
                             </RelativeLayout>
 
@@ -358,7 +383,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="Tin tức"
+                    android:text="Khuyến mại"
                     android:textColor="#000"
                     android:textSize="25sp" />
 
@@ -367,7 +392,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="90dp">
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
@@ -382,10 +408,19 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent">
 
-                                <ImageView
-                                    android:layout_width="325dp"
-                                    android:layout_height="184dp"
-                                    android:src="@mipmap/img_ong_nhua" />
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="325dp"
+                                        android:layout_height="184dp"
+                                        android:src="@mipmap/img_ong_den_1"/>
+
+
+                                </android.support.v7.widget.CardView>
+
 
                             </RelativeLayout>
 
@@ -394,10 +429,17 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="10dp">
 
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="20dp">
+
                                 <ImageView
                                     android:layout_width="325dp"
                                     android:layout_height="184dp"
-                                    android:src="@mipmap/img_van" />
+                                    android:src="@mipmap/img_ong_den_2" />
+
+                                </android.support.v7.widget.CardView>
 
                             </RelativeLayout>
 
@@ -406,10 +448,17 @@
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="10dp">
 
-                                <ImageView
-                                    android:layout_width="325dp"
-                                    android:layout_height="184dp"
-                                    android:src="@mipmap/img_t_noi" />
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="325dp"
+                                        android:layout_height="184dp"
+                                        android:src="@mipmap/img_ong_den_cuon" />
+
+                                </android.support.v7.widget.CardView>
 
                             </RelativeLayout>
 
