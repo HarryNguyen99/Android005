@@ -73,7 +73,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:background="@drawable/white_round_home"
-                    android:elevation="10dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -313,6 +312,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent">
 
+<<<<<<< HEAD:SOURCE/app/src/main/res/layout/home_layout.xml
                                 <RelativeLayout
 <<<<<<< HEAD:SOURCE/app/src/main/res/layout/activity_home.xml
                                     android:layout_width="100dp"
@@ -367,6 +367,8 @@
 =======
 
 >>>>>>> 4b95b605f28b1f432e325136de1ff738bc32f847:SOURCE/app/src/main/res/layout/home_layout.xml
+=======
+>>>>>>> parent of 4b95b60... SharedPreferences:SOURCE/app/src/main/res/layout/activity_home.xml
                                 <android.support.v7.widget.CardView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
