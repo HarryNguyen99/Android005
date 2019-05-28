@@ -307,25 +307,25 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="50dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/red_round_login">
+            android:background="@drawable/red_round_pressed">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/roboto_black"
-                android:gravity="center"
-                android:text="Đồng ý"
-                android:textColor="#ffff"
-                android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="center"
+                    android:text="Đồng ý"
+                    android:textColor="#ffff"
+                    android:textSize="20sp" />
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="5dp"
-                android:padding="5dp"
-                android:src="@mipmap/ic_muiten_bt" />
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/ic_muiten_bt" />
 
         </RelativeLayout>
 
