@@ -1,6 +1,7 @@
 package com.example.baihoc1.android_005;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,13 +38,23 @@ public class LoginActivity extends AppCompatActivity {
                 if (checkValid()) {
 //                   Chuyển màn hình
 //                    Tạo đối tượng intent
-                    Intent tk = new Intent(LoginActivity.this, TaikhoanActivity.class);
-                    User user;
-                    user = new User();
-                    user.setUsername("Harry Nguyen");
-                    user.setPhoneNumber("+84961080123");
-                    user.setProfileUrl("https://images.hellogiggles.com/uploads/2018/04/11101451/national-pet-day-puns.jpg");
-                    startActivity(tk);
+                    Intent home = new Intent(LoginActivity.this, HomeActivity.class);
+//                    User user;
+//                    user = new User();
+//                    user.setUsername("Harry Nguyen");
+//                    user.setPhoneNumber("+84961080123");
+//                    user.setProfileUrl("https://images.hellogiggles.com/uploads/2018/04/11101451/national-pet-day-puns.jpg");
+
+//                    lưu sđt vào để lần sau vào thẳng
+                    //*thêm - sửa*
+                    //B1: tạo hoặc mở file "đặt tên k đc chùng,k biết định dạng file"
+                    //B2: Dùng tool để sửa "Editer"
+                    //B3 sửa file
+                    //B4: Lưu
+                    AppConfig appConfig = new AppConfig();
+                    appConfig.setphonenumber(edtPhoneNumber.getText().toString(),LoginActivity.this);
+
+                    startActivity(home);
                     fileList();
                 } else {
 //                    Hiển thị thông báo lỗi
@@ -51,18 +62,23 @@ public class LoginActivity extends AppCompatActivity {
                             "Vui lòng kiểm tra lại số điện thoại",
                             Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
-
     }
+
+
+//    void savephonnumber (){
+//        SharedPreferences sharedPreferences = getSharedPreferences("Android005", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//        editor.putString("phone_number", edtPhoneNumber.getText().toString());
+//        editor.apply();
+//    }
 
     boolean checkValid() {
         int phoneLeng = edtPhoneNumber.getText().toString().length();
-       return (phoneLeng == 10);
+        return (phoneLeng == 10);
 
- //       if (phoneLeng == 10)
+        //       if (phoneLeng == 10)
 //            return true;
 //       return false;
     }
